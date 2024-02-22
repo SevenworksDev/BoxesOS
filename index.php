@@ -11,7 +11,7 @@ foreach ($folders as $folder) {
     if (file_exists($name) && file_exists($icon)) {
         $appName = trim(file_get_contents($name));
         $appIcon = $icon;
-        $app = './sys/apps/' . basename($folder) . '/index.html';
+        $app = './sys/apps/' . basename($folder) . '/';
         $apps[] = [
             'name' => $appName,
             'icon' => $appIcon,
@@ -152,7 +152,7 @@ foreach ($folders as $folder) {
   <iframe id="app" style="background-color:white;" src="" frameborder="0"></iframe>
   <script>
     function run(appURL) {
-      document.getElementById('splash').style.display = 'none'; // Hide splash screen
+      document.getElementById('splash').style.display = 'none';
       document.getElementById('menu').style.display = 'none';
       document.getElementById('app').src = appURL;
       document.getElementById('app').style.display = 'block';
@@ -192,7 +192,7 @@ foreach ($folders as $folder) {
 
     setTimeout(function () {
       document.getElementById('splash').style.display = 'none';
-    }, 2000);
+    }, 1000);
   </script>
 </body>
 </html>
