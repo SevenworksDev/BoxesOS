@@ -1,5 +1,5 @@
 <?php
-$apps = json_decode(file_get_contents('http://localhost:9999/apps.json'), true);
+$apps = json_decode(file_get_contents('https://boxes.sevenworks.eu.org/apps.json'), true);
 
 echo '<html><head><title>App Store</title></head><body style="background-color: #ffffff; padding: 20px; font-family: Arial;"><h1>Boxes App Store</h1><hr>';
 
