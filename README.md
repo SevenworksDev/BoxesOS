@@ -1,16 +1,8 @@
 # BoxesOS
-random web operating system made in php
-## App structure
+Operating System for the web made in PHP.
+## Features
 ```
-/sys/apps/(app_name):
-    name.txt - name of app
-    favicon.ico - app icon
-    (insert all php/html files and everything else in this folder also)
-```
-## TODO
-```
-app store
-file manager
-blah blah blah
-blah blah blah
+- Setup Tool
+- App Store
+- More to come via the App Store
 ```
